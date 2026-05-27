@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA na Previsão do Tempo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1><i class="fa-solid fa-brain"></i> Clima<span class="highlight">IA</span></h1>
+            <p>A revolução dos modelos preditivos meteorológicos</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="about-section">
+            <h2>Como a Inteligência Artificial Transforma a Meteorologia?</h2>
+            <p>Os modelos tradicionais dependem de supercomputadores resolvendo equações físicas complexas. A IA muda o jogo ao analisar bilhões de dados históricos de satélites e estações em segundos, identificando padrões invisíveis para os métodos convencionais.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                    <h3>Alta Velocidade</h3>
+                    <p>Previsões que levavam horas para ser processadas agora rodam em poucos minutos.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <h3>Precisão Localizada</h3>
+                    <p>Maior assertividade para microclimas e eventos extremos de curto prazo.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Aprendizado Contínuo</h3>
+                    <p>O sistema se autoajusta e melhora a cada erro cometido no passado.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="simulator-section">
+            <h2>Simulador de Análise Preditiva</h2>
+            <p>Selecione as variáveis para que o nosso "modelo de IA" processe uma previsão do tempo fictícia.</p>
+            
+            <div class="simulator-box">
+                <div class="control-group">
+                    <label for="temp-input">Temperatura Atual (°C):</label>
+                    <input type="number" id="temp-input" value="25" min="-10" max="45">
+                </div>
+                <div class="control-group">
+                    <label for="humidity-input">Umidade Relativa (%):</label>
+                    <input type="number" id="humidity-input" value="60" min="0" max="100">
+                </div>
+                <div class="control-group">
+                    <label for="pressure-input">Pressão Atmosférica (hPa):</label>
+                    <input type="number" id="pressure-input" value="1012" min="950" max="1050">
+                </div>
+                
+                <button id="predict-btn"><i class="fa-solid fa-gears"></i> Processar por IA</button>
+            </div>
+
+            <div id="result-display" class="result-box hidden">
+                <h3><i class="fa-solid fa-square-poll-vertical"></i> Resultado da Rede Neural</h3>
+                <div class="loading" id="loading-spinner">
+                    <i class="fa-solid fa-spinner fa-spin"></i> Analisando padrões globais...
+                </div>
+                <div id="prediction-output" class="hidden">
+                    <p id="weather-text"></p>
+                    <p id="confidence-text" class="confidence"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ClimaIA - Tecnologia e Ciência de Dados Aplicada.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
