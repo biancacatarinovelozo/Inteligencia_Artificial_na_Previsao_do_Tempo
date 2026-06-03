@@ -1,9 +1,9 @@
 /* Configurações Gerais e Cores Agro */
 :root {
-    --cor-principal: #2e7d32; /* Verde Agrinho */
-    --cor-secundaria: #1b5e20;
-    --cor-destaque: #81c784;
-    --cor-escura: #212121;
+    --cor-principal: hsl(226, 46%, 34%); /* Verde Agrinho */
+    --cor-secundaria: hsl(125, 75%, 3%);
+    --cor-destaque: hsl(182, 38%, 64%);
+    --cor-escura: hsl(0, 0%, 13%);
     --cor-clara: #ffffff;
     --bg-suave: #f4f9f4;
 }
