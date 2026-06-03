@@ -3,38 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho 2026 - Conexões Inteligentes</title>
+    <title>Agrinho 2026 - IA e a Descarbonização no Campo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <header>
-        <div class="logo">
-            <h2>Agro<span>Sustentável</span></h2>
-        </div>
-        
-        <button class="hamburger" id="hamburger" aria-label="Abrir Menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
+        <div class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-leaf"></i> Agrinho <span>2026</span>
+            </div>
+            
+            <button class="hamburger" id="menuBtn" aria-label="Abrir menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
 
-        <nav class="nav-menu" id="nav-menu">
-            <ul>
-                <li><a href="#inicio" class="nav-link">Início</a></li>
-                <li><a href="#previsao-ia" class="nav-link">IA na Previsão do Tempo</a></li>
-                <li><a href="#carbonizacao" class="nav-link">Descarbonização do Campo</a></li>
-                <li><a href="#conexoes" class="nav-link">Campo & Cidade</a></li>
-            </ul>
-        </nav>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#previsao-ia" class="nav-link">IA na Previsão do Tempo</a></li>
+                    <li><a href="#descarbonizacao" class="nav-link">Descarbonização</a></li>
+                    <li><a href="#impacto" class="nav-link">Impacto no Campo</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section id="inicio" class="hero">
         <div class="hero-content">
-            <h1>Inovação e Sustentabilidade no Campo</h1>
-            <p>Descubra como a Inteligência Artificial e a tecnologia climática constroem o futuro do agronegócio sob as diretrizes do Agrinho 2026.</p>
-            <a href="#previsao-ia" class="btn">Explorar Tópicos</a>
+            <h1>Inteligência Artificial e a Nova Era Agrícola</h1>
+            <p>Descubra como a previsão do tempo assertiva via IA impulsiona a sustentabilidade e a descarbonização no campo.</p>
+            <a href="#previsao-ia" class="btn-principal">Explorar Tópicos</a>
         </div>
     </section>
 
-    <main class="container">
+    <section id="previsao-ia" class="topico-secao">
+        <div class="container">
+            <h2>1. Inteligência Artificial na Previsão do Tempo</h2>
+            <div class="conteudo-flex">
+                <div class="texto">
+                    <p>A meteorologia tradicional ganhou um aliado de peso: o <strong>Machine Learning (Aprendizado de Máquina)</strong>. Ao processar bilhões de dados de satélites, estações meteorológicas e sensores no solo em tempo real, a IA consegue prever microclimas com precisão cirúrgica.</p>
+                    <p>Isso permite antecipar janelas exatas de plantio e colheita, prever geadas, secas ou tempestades severas com dias de antecedência, reduzindo drasticamente as perdas na lavoura.</p>
+                </div>
+                <div class="imagem-container">
+                    <img src="https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&w=600&q=80" alt="Satélite e dados meteorológicos digitais sobre uma plantação">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="descarbonizacao" class="topico-secao bg-claro">
+        <div class="container">
+            <h2>2. Como a IA Influencia a Descarbonização</h2>
+            <div class="conteudo-flex reverso">
+                <div class="texto">
+                    <p>A "carbonização" ou emissão excessiva de gases estufa no campo ocorre pelo uso ineficiente de recursos. Quando a IA prevê o clima com exatidão, o manejo muda de patamar:</p>
+                    <ul>
+                        <li><i class="fa-solid fa-droplet"></i> <strong>Economia de Combustível:</strong> Tratores e maquinários só vão a campo no momento exato, evitando retrabalho e queima desnecessária de diesel.</li>
+                        <li><i class="fa-solid fa-sprinkler"></i> <strong>Aplicação Otimizada de Insumos:</strong> Evita-se que fertilizantes nitrogenados (fortes emissores de CO₂) sejam lavados por chuvas imprevistas.</li>
+                        <li><i class="fa-solid fa-cloud-sun"></i> <strong>Manejo de Pastagens:</strong> Otimização do rotação do gado baseada na regeneração do pasto guiada pelo clima.</li>
+                    </ul>
+                </div>
+                <div class="imagem-container">
+                    <img src="https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=600&q=80" alt="Trator tecnológico trabalhando a terra de forma sustentável">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="impacto" class="topico-secao">
+        <div class="container">
+            <h2>3. Sustentabilidade e o Futuro Agro</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <i class="fa-solid fa-seedling"></i>
+                    <h3>Menos Resíduos</h3>
+                    <p>Menos desperdício de defensivos agrícolas protege o ecossistema e reduz a pegada de carbono da produção.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Maior Produtividade</h3>
+                    <p>Produzir mais na mesma quantidade de terra evita o desmatamento e preserva os sumidouros naturais de carbono.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <h3>Créditos de Carbono</h3>
+                    <p>Produtores que adotam tecnologias verdes geram ativos financeiros ao sequestrar carbono no solo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Projeto Agrinho. Desenvolvido para a categoria Robótica/Programação.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
